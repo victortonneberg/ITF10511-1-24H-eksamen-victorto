@@ -12,25 +12,27 @@
 </head>
 <body>
     <header id="global-header">
-        <form>
+        <form id="search-bar">
             <!-- <label for="search">Søk</label> | Sjekke opp om det er semantisk riktig å fjerne denne. Vil aria-label under være godt nok?-->
             <input type="search" placeholder="Søk her" id="search" aria-label="Søk her">
             <!-- <input type="submit" value="Søk"> | Sjekke opp om det er semantisk riktig å fjerne denne-->
-             <button type="submit">
+             <button type="submit" id="search-button">
                 <i class="fa-solid fa-magnifying-glass"></i>
              </button>
         </form>
-        <nav>
+        <nav id="global-nav">
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#">Produkter</a></li>
-                <li class="logo"><a href="index.html">Logo</a></li> <!-- Kan ev. bruke <span> her, spør på veiledning -->
+            </ul>
+                <a id="logo" href="index.html">Logo</a>
+            <ul>
                 <li><a href="#">Kategorier</a></li>
                 <li><a href="#">Kontakt oss</a></li>
             </ul>
         </nav>
 
-        <section>
+        <section id="profile">
             <ul>
                 <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
                 <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
@@ -43,7 +45,7 @@
         <section id="banner">
             <article>
                 <figure>
-                    <img src="https://picsum.photos/800/400" alt="Bannerbilde">
+                    <img src="https://picsum.photos/400/600" alt="Bannerbilde">
                 </figure>
                 <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
                 <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
@@ -51,7 +53,7 @@
             </article>
             <article>
                 <figure>
-                    <img src="https://picsum.photos/800/400" alt="Bannerbilde">
+                    <img src="https://picsum.photos/400/600" alt="Bannerbilde">
                 </figure>
                 <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
                 <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
@@ -59,7 +61,7 @@
             </article>
             <article>
                 <figure>
-                    <img src="https://picsum.photos/800/400" alt="Bannerbilde">
+                    <img src="https://picsum.photos/400/600" alt="Bannerbilde">
                 </figure>
                 <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
                 <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
