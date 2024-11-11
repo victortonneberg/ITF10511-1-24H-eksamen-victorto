@@ -100,13 +100,18 @@ body{
             text-decoration: none;
             margin: 0.5rem;
             font-size: 1.2rem;
-            
-
-            i{
-                color: black; /*Hvorfor vises ikke profil og hjerte som fa-regular?*/
-            }
         }
     }
+}
+
+i.fa-regular {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+i.fa-solid {
+    color: rgb(0, 0, 0); 
+    -webkit-text-stroke: none;
 }
 
 #banner-container { /*Spørre om dette er responsivt nok*/
@@ -129,7 +134,7 @@ body{
         padding: 1rem;
         overflow: hidden;
 
-        figure{
+        picture{
             margin: 0;
             padding: 0;
             width: 100%;
@@ -138,7 +143,7 @@ body{
             img{
                 display: block;
                 width: 100%;
-                height: auto;
+                height: 600px;
                 border-radius: 30px;
             }
         }
@@ -259,20 +264,39 @@ body{
     font-size: 1.3rem;
     border-radius: 25px;
     color: #fff;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(203, 203, 203, 0.767);
+
+    i{
+        color: transparent;
+        -webkit-text-stroke: 2px white; 
+    }
 }
 
-
-.product-card h3, .product-card p.price{ 
-    display: inline-block;
-    margin: 1rem 1rem;
+.product-card .header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .product-card h3 {
-    margin-right: auto;
+    margin: 1rem;
 }
 
-.product-card p.price{
-    margin-left: auto; 
+.product-card .price {
+    margin: 1rem;
 }
+
+.product-card .rating {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 15px;
+    
+    i{
+        padding: 4px;
+    }
+}
+
 
