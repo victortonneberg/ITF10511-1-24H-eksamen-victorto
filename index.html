@@ -46,30 +46,33 @@
         <section id="banner">
             <article>
                 <picture>
+                    <source media="(max-width:400px)" srcset="img/front-page/banner/banner.jpg">
+                    <!-- Image by <a href="https://pixabay.com/users/fajarbudi86-1126901/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5380351">fajarbudi86</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5380351">Pixabay</a> -->
+                     <source media="(max-width:800px)" srcset="img/front-page/banner/banner_1280x535.jpg">
+                     <img src="img/front-page/banner/banner.jpg" alt="Bannerbilde">
+                </picture>
+                <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+                    <button type="button">Ler mer!</button>
+            </article>
+            <article>
+                <picture>
                     <source media="(max-width:400px)" srcset="img/front-page/banner.jpg">
                     <!-- Image by <a href="https://pixabay.com/users/fajarbudi86-1126901/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5380351">fajarbudi86</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5380351">Pixabay</a> -->
                      <source media="(max-width:800px)" srcset="img/front-page/banner_1280x535.jpg">
                      <img src="img/front-page/banner.jpg" alt="Bannerbilde">
                 </picture>
-                <!-- <figure>
-                    <img src="https://picsum.photos/400/600" alt="Bannerbilde">
-                </figure> -->
                 <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
                 <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
                     <button type="button">Ler mer!</button>
             </article>
             <article>
-                <figure>
-                    <img src="https://picsum.photos/400/600" alt="Bannerbilde">
-                </figure>
-                <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
-                    <button type="button">Ler mer!</button>
-            </article>
-            <article>
-                <figure>
-                    <img src="https://picsum.photos/400/600" alt="Bannerbilde">
-                </figure>
+                <picture>
+                    <source media="(max-width:400px)" srcset="img/front-page/banner.jpg">
+                    <!-- Image by <a href="https://pixabay.com/users/fajarbudi86-1126901/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5380351">fajarbudi86</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5380351">Pixabay</a> -->
+                     <source media="(max-width:800px)" srcset="img/front-page/banner_1280x535.jpg">
+                     <img src="img/front-page/banner.jpg" alt="Bannerbilde">
+                </picture>
                 <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
                 <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
                     <button type="button">Ler mer!</button>               
@@ -84,10 +87,16 @@
             <button type="button" id="special-price">Special Price</button>
             <button type="button" id="best-sellers">Best Sellers</button>
             <article class="product-card">
-                <figure class="product image">
+                <picture>
+                    <source media="(max-width:400px)" srcset="img/front-page/product/product_640x640.jpg">
+                    <source media="(max-width:800px)" srcset="img/front-page/product/product_1280x1280.jpg">
+                    <img src="img/front-page/product/product_1920x1920.jpg" alt="Produktbilde">
+                    <button id="wishlist"><i class="fa-regular fa-heart"></i></button>
+                </picture>
+                <!-- <figure class="product image">
                     <img src="https://picsum.photos/400/400" alt="Produktbilde">
                     <button id="wishlist"><i class="fa-regular fa-heart"></i></button>
-                </figure>
+                </figure> -->
                 <section class="header-container">
                     <h3>Product name</h3>
                     <p class="price">Kr 1999</p>
@@ -102,10 +111,12 @@
                 </p>
                 </article>
             <article class="product-card">
-                <figure class="product image">
-                    <img src="https://picsum.photos/400/400" alt="Produktbilde">
-                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
-                </figure>
+                <picture>
+                    <source media="(max-width:400px)" srcset="img/front-page/product/product_640x640.jpg">
+                    <source media="(max-width:800px)" srcset="img/front-page/product/product_1280x1280.jpg">
+                    <img src="img/front-page/product/product_1920x1920.jpg" alt="Produktbilde">
+                    <button id="wishlist"><i class="fa-regular fa-heart"></i></button>
+                </picture>
                 <section class="header-container">
                     <h3>Product name</h3>
                     <p class="price">Kr 1999</p>
@@ -120,10 +131,12 @@
                 </p>
                 </article>
             <article class="product-card">
-                <figure class="product image">
-                    <img src="https://picsum.photos/400/400" alt="Produktbilde">
-                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
-                </figure>
+                <picture>
+                    <source media="(max-width:400px)" srcset="img/front-page/product/product_640x640.jpg">
+                    <source media="(max-width:800px)" srcset="img/front-page/product/product_1280x1280.jpg">
+                    <img src="img/front-page/product/product_1920x1920.jpg" alt="Produktbilde">
+                    <button id="wishlist"><i class="fa-regular fa-heart"></i></button>
+                </picture>
                 <section class="header-container">
                     <h3>Product name</h3>
                     <p class="price">Kr 1999</p>
@@ -138,10 +151,12 @@
                 </p>
                 </article>
             <article class="product-card">
-                <figure class="product image">
-                    <img src="https://picsum.photos/400/400" alt="Produktbilde">
-                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
-                </figure>
+                <picture>
+                    <source media="(max-width:400px)" srcset="img/front-page/product/product_640x640.jpg">
+                    <source media="(max-width:800px)" srcset="img/front-page/product/product_1280x1280.jpg">
+                    <img src="img/front-page/product/product_1920x1920.jpg" alt="Produktbilde">
+                    <button id="wishlist"><i class="fa-regular fa-heart"></i></button>
+                </picture>
                 <section class="header-container">
                     <h3>Product name</h3>
                     <p class="price">Kr 1999</p>
@@ -156,10 +171,12 @@
                 </p>
                 </article>
             <article class="product-card">
-                <figure class="product image">
-                    <img src="https://picsum.photos/400/400" alt="Produktbilde">
-                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
-                </figure>
+                <picture>
+                    <source media="(max-width:400px)" srcset="img/front-page/product/product_640x640.jpg">
+                    <source media="(max-width:800px)" srcset="img/front-page/product/product_1280x1280.jpg">
+                    <img src="img/front-page/product/product_1920x1920.jpg" alt="Produktbilde">
+                    <button id="wishlist"><i class="fa-regular fa-heart"></i></button>
+                </picture>
                 <section class="header-container">
                     <h3>Product name</h3>
                     <p class="price">Kr 1999</p>
@@ -174,10 +191,12 @@
                 </p>
                 </article>
             <article class="product-card">
-                <figure class="product image">
-                    <img src="https://picsum.photos/400/400" alt="Produktbilde">
-                    <button class="wishlist"><i class="fa-regular fa-heart"></i></button>
-                </figure>
+                <picture>
+                    <source media="(max-width:400px)" srcset="img/front-page/product/product_640x640.jpg">
+                    <source media="(max-width:800px)" srcset="img/front-page/product/product_1280x1280.jpg">
+                    <img src="img/front-page/product/product_1920x1920.jpg" alt="Produktbilde">
+                    <button id="wishlist"><i class="fa-regular fa-heart"></i></button>
+                </picture>
                 <section class="header-container">
                     <h3>Product name</h3>
                     <p class="price">Kr 1999</p>

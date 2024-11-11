@@ -240,7 +240,7 @@ i.fa-solid {
     align-items: center;
     flex-direction: column;
 }
-.product-card figure {
+.product-card picture{
     display: block;
     position: relative; 
     margin: 0; 
@@ -299,4 +299,23 @@ i.fa-solid {
     }
 }
 
+#popular-categories{
+    margin-top: 5rem;
+    text-align: center;
+
+    h2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 2rem;
+    }
+    
+    p{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+}
 
