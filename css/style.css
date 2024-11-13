@@ -76,7 +76,7 @@ body{
 
     #logo{
         font-size: 2rem;
-        font-weight: bold;
+        font-weight: 750;
         text-decoration: none;
         color: black;
         padding: 0.5rem;
@@ -213,7 +213,7 @@ i.fa-solid {
         cursor: pointer;
     }
 
-    #special-price:hover, #best-sellers:hover{
+    #new-product:hover, #special-price:hover, #best-sellers:hover{ /*Fjerne dette på mobile?*/
         background-color: grey;
         color: white;
     }
@@ -237,27 +237,28 @@ i.fa-solid {
 
 .product-card{
     display: flex;
+    position: relative;
     align-items: center;
     flex-direction: column;
 }
 .product-card picture{
     display: block;
     position: relative; 
-    margin: 0; 
-    width: 95%;
+    padding: 1rem; 
+    width: 100%;
 }
 
 .product-card img {
     display: block;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 100%;
     height: auto; 
 }
 
 .product-card button {
     position: absolute;
-    top: 10px; 
-    right: 10px; 
+    top: 25px; 
+    right: 25px; 
     padding: 0.5rem;
     border: none;
     cursor: pointer;
@@ -302,13 +303,13 @@ i.fa-solid {
 #popular-categories{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 5rem;
+    margin-top: 1.5rem;
     text-align: center;
 
     h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-bottom: 1rem;
+        text-align: center;
     }
     
     p{
@@ -382,7 +383,7 @@ i.fa-solid {
     }
 
     article{
-        flex: 0 0 auto; /*ChatGPT 12.11.24*/
+        flex: 0 0 auto; /*Denne linjen er hentet fra ChatGPT 12.11.24*/
         width: 300px;
         height: auto;
         border: 1px solid #ddd;
@@ -425,3 +426,121 @@ i.fa-solid {
         object-fit: cover;
     }
 }
+
+#global-footer {
+    display: grid;
+    grid-template-columns: 1fr auto; /* To kolonner med like bredde */
+    gap: 1rem; /* Mellomrom mellom seksjonene */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+
+    #footer-logo{
+        grid-column: span 2; /* Strekker seg over begge kolonnene */
+
+        h3{
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 7;
+        }
+    }
+
+    h4{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-weight: 10;
+    }
+
+    #contact{
+        p i{
+            padding-right: 1rem;
+        }
+    }
+
+    #shortcuts nav ul{
+        padding-left: 0;
+            
+            li{
+                text-decoration: none;
+                list-style: none;
+                padding: 0.3rem;
+    
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            } 
+        
+    }
+
+    #social-media ul{
+        display: flex;
+        padding: 0;
+        margin: 1.5rem;
+        margin-left: 0;
+        gap: 1rem;
+        list-style: none;
+
+        li a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            padding-right: 1rem;
+        }
+    }
+
+}
+
+
+
+/*Media Queries for desktop fra 800px.*/
+@media (min-width: 800px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto; /* Midtstiller innholdet */
+    }
+
+    #global-header{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+
+        #global-nav{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                margin: 1rem;
+
+                li{
+                    padding: 0.7rem;
+                }
+            }
+
+            #logo{
+                font-size: 3rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    #search-bar{
+        margin: 1rem;
+    }
+
+    #profile{
+        margin-top: 1.3rem;
+        margin-right: 1rem;
+
+    }
+
+    /*index.html*/
+
+}
+
+
