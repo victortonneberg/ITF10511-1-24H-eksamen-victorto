@@ -511,6 +511,7 @@ i.fa-solid {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+            margin-left: -5rem; /*For å midstille nav. Dobbeltsjekk wrap mot search bar her*/
 
             ul{
                 display: flex;
@@ -531,6 +532,7 @@ i.fa-solid {
 
     #search-bar{
         margin: 1rem;
+        
     }
 
     #profile{
@@ -539,8 +541,133 @@ i.fa-solid {
 
     }
 
+    /* #banner-container {
+       overflow: hidden;
+        padding: 1rem;
+    }
+
+    #banner {
+        flex-direction: row; 
+        overflow-x: auto;
+    }
+
+    #banner article {
+        display: block; 
+        min-width: 300px; 
+        flex-shrink: 0; 
+    }
+
+    #banner article picture img {
+        width: 100%; 
+        height: auto; 
+    } */
+
+
+        #banner-container {
+            overflow-x: auto; /* Tillater horisontal scrolling */
+            padding: 1rem;
+            border-radius: 15px; /* Sikrer avrundede hjørner */
+        }
+    
+        #banner {
+            display: flex;
+            flex-direction: row; /* Horisontal layout */
+            gap: 1rem;
+
+            h2{
+                top: 15% !important;
+            }
+
+            p{
+                top: 50% !important;
+            }
+
+            button{
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    
+        #banner article {
+            display: block;
+            min-width: 300px; /* Juster etter behov */
+            flex-shrink: 0;
+        }
+    
+        #banner article picture img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px; /* Valgfritt, fjern hvis ikke nødvendig */
+        }
+
+        #banner2 h2{
+            left: 5%;
+            text-align: left !important;
+        }
+
+        #banner2 p{
+            left: 5%;
+            text-align: left !important;
+        }
+
+        #banner2 button{
+            left: 5%;
+            max-width: 94px !important;
+            background-color: black !important;
+            color: #ffff;
+        }
+
+        #banner3 h2{
+            left: 5%;
+            text-align: left !important;
+            color: #ffff;
+        }
+
+        #banner3 p{
+            left: 5%;
+            text-align: left !important;
+            color: #ffff;
+        }
+
+        #banner3 button{
+            left: 5%;
+            max-width: 94px !important;
+        }
+
+
+
+        /* #banner article h2, #banner article p, #banner article button {
+            position: absolute;
+            padding-right: 1rem;
+            right: 5%;
+            max-width: 40%;
+            text-align: right;
+        }
+        
+        #banner article h2 {
+            top: 5%;
+            font-size: calc(1.5rem + 1vw);
+        }
+        
+        #banner article p {
+            top: 52%;
+            font-size: calc(0.8rem + 0.5vw);
+        }
+        
+        #banner article button {
+            top: 80%;
+            border-radius: 50px;
+            margin-right: 1rem;
+            padding: 0.6rem;
+            background-color: #ffff;
+            border: none;
+            cursor: pointer;  
+        } */
+    
+}
+    
     /*index.html*/
 
-}
+
 
 
