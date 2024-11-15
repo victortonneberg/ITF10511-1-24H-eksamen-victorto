@@ -355,22 +355,27 @@ i.fa-solid {
 
 #category1::after {
     background-image: url('../img/front-page/categories/coffe.jpg');
+    /*Image by <a href="https://pixabay.com/users/freephotocc-2275370/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1280537">Free Photos</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1280537">Pixabay</a>*/
 }
 
 #category2::after {
     background-image: url('../img/front-page/categories/woman.jpg');
+    /*Image by <a href="https://pixabay.com/users/jupilu-9196359/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7841725">Jupi Lu</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7841725">Pixabay</a>*/
 }
 
 #category3::after {
     background-image: url('../img/front-page/categories/swan.jpg');
+    /*Image by <a href="https://pixabay.com/users/pen_ash-5526837/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8640045">Penny</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8640045">Pixabay</a>*/
 }
 
 #category4::after {
     background-image: url('../img/front-page/categories/winter.jpg');
+    /*Image by <a href="https://pixabay.com/users/level_up_filming-18696359/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8578334">Jason</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8578334">Pixabay</a>*/
 }
 
 #category5::after {
     background-image: url('../img/front-page/categories/bean.jpg');
+    /*Image by <a href="https://pixabay.com/users/zimt2003-5558721/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8451254">Petra Göschel</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8451254">Pixabay</a>*/
 }
 
 #reviews {
@@ -434,6 +439,8 @@ i.fa-solid {
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: left;
+    border-top: solid #d6d6d6;
+    margin-top: 2rem;
 
     #footer-logo{
         grid-column: span 2; /* Strekker seg over begge kolonnene */
@@ -442,6 +449,7 @@ i.fa-solid {
             margin: 0;
             font-size: 2rem;
             font-weight: 7;
+            margin-top: 3rem;
         }
     }
 
@@ -538,40 +546,48 @@ i.fa-solid {
     #profile{
         margin-top: 1.3rem;
         margin-right: 1rem;
-
     }
 
-    /* #banner-container {
-       overflow: hidden;
-        padding: 1rem;
+    .hover-grow a:hover i{ /* Inspirasjon fra https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/*/
+        transform: scale(1.2);
+        transition: transform 0.5s ease;
     }
 
-    #banner {
-        flex-direction: row; 
-        overflow-x: auto;
-    }
-
-    #banner article {
-        display: block; 
-        min-width: 300px; 
-        flex-shrink: 0; 
-    }
-
-    #banner article picture img {
-        width: 100%; 
-        height: auto; 
-    } */
-
+        /*index.html starter her*/
 
         #banner-container {
-            overflow-x: auto; /* Tillater horisontal scrolling */
-            padding: 1rem;
-            border-radius: 15px; /* Sikrer avrundede hjørner */
+            overflow-x: auto; 
+            overflow-y: hidden;
+            /* padding: 1rem; */
+            border-radius: 15px; 
+            height: 488px;
+            margin-top: 3rem;
+            position: relative;
+
+            /* .fa-arrow-left, .fa-arrow-right{
+                position: absolute;
+                top: 45%;
+                padding: 13px;
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .fa-arrow-left{
+                left: 10px;
+                z-index: 1;
+            }
+
+            .fa-arrow-right{
+                right: 20px;
+                z-index: 1;
+            } */
         }
+
     
         #banner {
             display: flex;
-            flex-direction: row; /* Horisontal layout */
+            flex-direction: row; 
             gap: 1rem;
 
             h2{
@@ -590,14 +606,14 @@ i.fa-solid {
     
         #banner article {
             display: block;
-            min-width: 300px; /* Juster etter behov */
+            min-width: 300px; 
             flex-shrink: 0;
         }
     
         #banner article picture img {
             width: 100%;
             height: auto;
-            border-radius: 15px; /* Valgfritt, fjern hvis ikke nødvendig */
+            border-radius: 15px; 
         }
 
         #banner2 h2{
@@ -634,39 +650,79 @@ i.fa-solid {
             max-width: 94px !important;
         }
 
+        #popular-products {
+            display: block; 
+            
+            .product-container{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap; 
+                gap: 1rem; 
 
+                .product-card{
+                    width: calc(32% - 1rem); 
+                    margin-bottom: 2rem; 
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
 
-        /* #banner article h2, #banner article p, #banner article button {
-            position: absolute;
-            padding-right: 1rem;
-            right: 5%;
-            max-width: 40%;
-            text-align: right;
+                    picture{
+                        padding: 0;
+                    }
+
+                    button{
+                        top: 6px;
+                        right: 6px;
+                    }
+
+                    button:hover{
+                        background-color: #c47675;
+                    }
+                }
+            }
         }
+
+        #popular-categories{
+            grid-template-columns: repeat(3, 1fr); 
+            grid-template-rows: auto auto auto auto auto; 
+            gap: 1rem;
+            margin: 0 1rem 0 1rem;
+
+            h2{
+                grid-column: 1 / -1; 
+            }
         
-        #banner article h2 {
-            top: 5%;
-            font-size: calc(1.5rem + 1vw);
+            p{
+                grid-column: 1 / -1; 
+            }
+        
+            article{
+                width: 100%;
+                height: 350px; 
+                margin: 0;
+            }
+        
+            #category3{
+                grid-row: 3 / 7; 
+                grid-column: 3 / 4; 
+                height: 600px !important;
+            }
+        
+            #category4{
+                grid-row: 4 / 6; 
+                grid-column: 1 / 3; 
+                height: 550px !important;
+            }
+        
+            #category5{
+                grid-row: 5 / 6; 
+                grid-column: 3 / 4; 
+                height: 300px !important;
+                margin-top: 3rem !important;
+            }
         }
-        
-        #banner article p {
-            top: 52%;
-            font-size: calc(0.8rem + 0.5vw);
-        }
-        
-        #banner article button {
-            top: 80%;
-            border-radius: 50px;
-            margin-right: 1rem;
-            padding: 0.6rem;
-            background-color: #ffff;
-            border: none;
-            cursor: pointer;  
-        } */
-    
 }
-    
-    /*index.html*/
+
 
 
 
