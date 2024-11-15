@@ -434,8 +434,8 @@ i.fa-solid {
 
 #global-footer {
     display: grid;
-    grid-template-columns: 1fr auto; /* To kolonner med like bredde */
-    gap: 1rem; /* Mellomrom mellom seksjonene */
+    grid-template-columns: 1fr auto; 
+    gap: 1rem; 
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: left;
@@ -443,7 +443,7 @@ i.fa-solid {
     margin-top: 2rem;
 
     #footer-logo{
-        grid-column: span 2; /* Strekker seg over begge kolonnene */
+        grid-column: span 2; 
 
         h3{
             margin: 0;
@@ -504,16 +504,17 @@ i.fa-solid {
 
 
 /*Media Queries for desktop fra 800px.*/
-@media (min-width: 800px) {
+@media (min-width: 800px){
     body {
-        max-width: 1200px;
+        /* max-width: 1200px; */
         margin: 0 auto; /* Midtstiller innholdet */
     }
 
     #global-header{
         flex-direction: row;
         flex-wrap: wrap;
-        margin-top: 1rem;
+        margin-top: 1.3rem;
+        font-size: 1.3rem;
 
         #global-nav{
             flex-direction: row;
@@ -539,17 +540,22 @@ i.fa-solid {
     }
 
     #search-bar{
-        margin: 1rem;
+        margin-top: 0.1rem;
+        margin-left: 11rem;
         
     }
 
     #profile{
         margin-top: 1.3rem;
-        margin-right: 1rem;
+        margin-right: 11rem;
+        i{
+            font-size: 1.3rem;
+        }
+        
     }
 
     .hover-grow a:hover i{ /* Inspirasjon fra https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/*/
-        transform: scale(1.2);
+        transform: scale(1.5);
         transition: transform 0.5s ease;
     }
 
@@ -558,10 +564,9 @@ i.fa-solid {
         #banner-container {
             overflow-x: auto; 
             overflow-y: hidden;
-            /* padding: 1rem; */
             border-radius: 15px; 
-            height: 488px;
-            margin-top: 3rem;
+            height: 700px;
+            margin: 3rem 10rem 3rem 10rem;
             position: relative;
 
             /* .fa-arrow-left, .fa-arrow-right{
@@ -612,7 +617,7 @@ i.fa-solid {
     
         #banner article picture img {
             width: 100%;
-            height: auto;
+            height: 700px;
             border-radius: 15px; 
         }
 
@@ -652,6 +657,7 @@ i.fa-solid {
 
         #popular-products {
             display: block; 
+            margin: 3rem 10rem 3rem 10rem;
             
             .product-container{
                 display: flex;
@@ -662,6 +668,7 @@ i.fa-solid {
                 .product-card{
                     width: calc(32% - 1rem); 
                     margin-bottom: 2rem; 
+                    margin-top: 3rem;
                     display: flex;
                     flex-direction: column;
                     position: relative;
@@ -686,7 +693,8 @@ i.fa-solid {
             grid-template-columns: repeat(3, 1fr); 
             grid-template-rows: auto auto auto auto auto; 
             gap: 1rem;
-            margin: 0 1rem 0 1rem;
+            /* margin: 0 1rem 0 1rem; */
+            margin: 3rem 10rem 3rem 10rem;
 
             h2{
                 grid-column: 1 / -1; 
@@ -721,6 +729,85 @@ i.fa-solid {
                 margin-top: 3rem !important;
             }
         }
+
+        #reviews{ 
+            margin: 3rem 10rem 3rem 10rem;
+
+            article{
+            width: 350px;
+        }
+    }
+
+        #global-footer {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 2rem; 
+            padding: 2rem; 
+            margin: 3rem 10rem 3rem 10rem;
+
+            #footer-logo {
+                grid-column: 1 / 2; 
+            }
+        
+            #contact {
+                grid-column: 1 / 2; 
+            }
+        
+            #shortcuts {
+                grid-column: 2 / 3; 
+            }
+        
+            #social-media {
+                grid-column: 3 / 4;
+                padding-left: 4rem;
+            }
+        
+            #social-media ul li a{
+                padding-right: 2.3rem !important;
+            }
+    }
+}
+
+/*Media Queries Tablet (popular-categories)*/
+@media (min-width: 600px) and (max-width: 799px){
+
+    #popular-categories{
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: auto auto auto auto auto; 
+        gap: 1rem;
+        margin: 0 1rem 0 1rem;
+
+        h2{
+            grid-column: 1 / -1; 
+        }
+    
+        p{
+            grid-column: 1 / -1; 
+        }
+    
+        article{
+            width: 100%;
+            height: 350px; 
+            margin: 0;
+        }
+    
+        #category3{
+            grid-row: 3 / 7; 
+            grid-column: 3 / 4; 
+        }
+    
+        #category4{
+            grid-row: 4 / 6; 
+            grid-column: 1 / 4; 
+            height: 200px !important;
+        }
+    
+        #category5{
+            grid-row: 6 / 7; 
+            grid-column: 1 / 4; 
+            height: 200px !important;
+        }
+    }
 }
 
 
