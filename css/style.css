@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+/*Felles HTML starter her*/
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
@@ -113,6 +115,77 @@ i.fa-solid {
     color: rgb(0, 0, 0); 
     -webkit-text-stroke: none;
 }
+
+
+#global-footer {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    gap: 1rem; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+    border-top: solid #d6d6d6;
+    margin-top: 2rem;
+
+    #footer-logo{
+        grid-column: span 2; 
+
+        h3{
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 7;
+            margin-top: 3rem;
+        }
+    }
+
+    h4{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-weight: 10;
+    }
+
+    #contact{
+        p i{
+            padding-right: 1rem;
+        }
+    }
+
+    #shortcuts nav ul{
+        padding-left: 0;
+            
+            li{
+                text-decoration: none;
+                list-style: none;
+                padding: 0.3rem;
+    
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            } 
+        
+    }
+
+    #social-media ul{
+        display: flex;
+        padding: 0;
+        margin: 1.5rem;
+        margin-left: 0;
+        gap: 1rem;
+        list-style: none;
+
+        li a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            padding-right: 1rem;
+        }
+    }
+}
+
+/*Felles HTML slutter her*/
 
 #banner-container { /*Spørre om dette er responsivt nok*/
     display: flex;
@@ -279,6 +352,10 @@ i.fa-solid {
     width: 100%;
 }
 
+.product-card a{
+    text-decoration: none;
+    color: inherit;
+}
 .product-card h3 {
     margin: 1rem;
 }
@@ -432,79 +509,14 @@ i.fa-solid {
     }
 }
 
-#global-footer {
-    display: grid;
-    grid-template-columns: 1fr auto; 
-    gap: 1rem; 
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: left;
-    border-top: solid #d6d6d6;
-    margin-top: 2rem;
 
-    #footer-logo{
-        grid-column: span 2; 
-
-        h3{
-            margin: 0;
-            font-size: 2rem;
-            font-weight: 7;
-            margin-top: 3rem;
-        }
-    }
-
-    h4{
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        font-weight: 10;
-    }
-
-    #contact{
-        p i{
-            padding-right: 1rem;
-        }
-    }
-
-    #shortcuts nav ul{
-        padding-left: 0;
-            
-            li{
-                text-decoration: none;
-                list-style: none;
-                padding: 0.3rem;
-    
-                a{
-                    color: black;
-                    text-decoration: none;
-                }
-            } 
-        
-    }
-
-    #social-media ul{
-        display: flex;
-        padding: 0;
-        margin: 1.5rem;
-        margin-left: 0;
-        gap: 1rem;
-        list-style: none;
-
-        li a{
-            text-decoration: none;
-            color: black;
-            font-size: 1.2rem;
-            padding-right: 1rem;
-        }
-    }
-
-}
 
 
 
 /*Media Queries for desktop fra 800px.*/
 @media (min-width: 800px){
+
+    /*Felles HTML struktur starter her*/
     body {
         /* max-width: 1200px; */
         margin: 0 auto; /* Midtstiller innholdet */
@@ -559,8 +571,38 @@ i.fa-solid {
         transition: transform 0.5s ease;
     }
 
-        /*index.html starter her*/
+    #global-footer {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 2rem; 
+        padding: 2rem; 
+        margin: 3rem 10rem 3rem 10rem;
 
+        #footer-logo {
+            grid-column: 1 / 2; 
+        }
+    
+        #contact {
+            grid-column: 1 / 2; 
+        }
+    
+        #shortcuts {
+            grid-column: 2 / 3; 
+        }
+    
+        #social-media {
+            grid-column: 3 / 4;
+            padding-left: 4rem;
+        }
+    
+        #social-media ul li a{
+            padding-right: 2.3rem !important;
+        }
+}
+
+        /*Felles HTML struktur slutter her*/
+
+        /*index.html starter her*/
         #banner-container {
             overflow-x: auto; 
             overflow-y: hidden;
@@ -737,36 +779,11 @@ i.fa-solid {
             width: 350px;
         }
     }
-
-        #global-footer {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 2rem; 
-            padding: 2rem; 
-            margin: 3rem 10rem 3rem 10rem;
-
-            #footer-logo {
-                grid-column: 1 / 2; 
-            }
-        
-            #contact {
-                grid-column: 1 / 2; 
-            }
-        
-            #shortcuts {
-                grid-column: 2 / 3; 
-            }
-        
-            #social-media {
-                grid-column: 3 / 4;
-                padding-left: 4rem;
-            }
-        
-            #social-media ul li a{
-                padding-right: 2.3rem !important;
-            }
-    }
 }
+
+/*Index.html slutter her*/
+
+
 
 /*Media Queries Tablet (popular-categories)*/
 @media (min-width: 600px) and (max-width: 799px){

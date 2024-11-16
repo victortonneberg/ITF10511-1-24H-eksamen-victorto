@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="ikoner/css/brands.css" rel="stylesheet">
+    <link href="ikoner/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Eksamen | Produktside</title> <!--Husk å endre denne-->
+</head>
+<body>
+    <header id="global-header">
+        <form id="search-bar">
+            <!-- <label for="search">Søk</label> | Sjekke opp om det er semantisk riktig å fjerne denne. Vil aria-label under være godt nok?-->
+            <input type="search" placeholder="Søk her" id="search" aria-label="Søk her">
+            <!-- <input type="submit" value="Søk"> | Sjekke opp om det er semantisk riktig å fjerne denne-->
+             <button type="submit" id="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+             </button>
+        </form>
+        <nav id="global-nav">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#popular-products">Produkter</a></li>
+            </ul>
+                <a id="logo" href="index.html">Logo</a>
+            <ul>
+                <li><a href="#popular-categories">Kategorier</a></li>
+                <li><a href="#contact">Kontakt oss</a></li>
+            </ul>
+        </nav>
+
+        <section id="profile">
+            <ul>
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li class="hover-grow"><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+        <section class="breadcrumb">
+            <ol>
+                <li><a href="index.html">Hjem</a></li>
+                <li><i class="fa-solid fa-angle-right"></i></li>
+                <li><a href="index.html#popular-categories">Kategorier</a></li>
+                <li><i class="fa-solid fa-angle-right"></i></li>
+                <li><a href="product.html">Produktnavn</a></li>
+            </ol>
+        </section>
+        <section id="product-images">
+            <section class="mini-image">
+                <picture>
+                    <source media="(max-width:400px)" srcset="img/product-page/main/suit.jpg">
+                    <!--Image by <a href="https://pixabay.com/users/gksayaan22-4237055/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1971663">gksayaan22</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1971663">Pixabay</a>-->
+                    <source media="(max-width:800px)" srcset="img/product-page/main/suit_847x1280.jpg">
+                    <img src="img/product-page/main/suit_1271x1920.jpg" alt="Produktbilde, dress for herrer">
+                </picture>
+                <picture>
+                    <source media="(max-width:400px)" srcset="img/product-page/main/suit.jpg">
+                    <!--Image by <a href="https://pixabay.com/users/gksayaan22-4237055/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1971663">gksayaan22</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1971663">Pixabay</a>-->
+                    <source media="(max-width:800px)" srcset="img/product-page/main/suit_847x1280.jpg">
+                    <img src="img/product-page/main/suit_1271x1920.jpg" alt="Produktbilde, dress for herrer">
+                </picture>
+                <picture>
+                    <source media="(max-width:400px)" srcset="img/product-page/main/suit.jpg">
+                    <!--Image by <a href="https://pixabay.com/users/gksayaan22-4237055/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1971663">gksayaan22</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1971663">Pixabay</a>-->
+                    <source media="(max-width:800px)" srcset="img/product-page/main/suit_847x1280.jpg">
+                    <img src="img/product-page/main/suit_1271x1920.jpg" alt="Produktbilde, dress for herrer">
+                </picture>
+                <picture>
+                    <source media="(max-width:400px)" srcset="img/product-page/main/suit.jpg">
+                    <!--Image by <a href="https://pixabay.com/users/gksayaan22-4237055/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1971663">gksayaan22</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1971663">Pixabay</a>-->
+                    <source media="(max-width:800px)" srcset="img/product-page/main/suit_847x1280.jpg">
+                    <img src="img/product-page/main/suit_1271x1920.jpg" alt="Produktbilde, dress for herrer">
+                </picture>
+            </section>
+        </section>
+
+        <section id="product-info">
+            <h3>Produktnavn</h3>
+            <section>
+                <a href="#">Merkenavn</a> <!--Fjerne a?-->
+                <p>5195 kr inkl. mva.</p>
+                <p>Farge:</p>
+                <p>beige</p>
+            </section>
+            <section>
+                <section>
+                    <label for="velg-størrelse">Velg størrelse</label>
+                    <select id="velg-størrelse">
+                        <option value="">Velg størrelse</option>
+                        <option value="extra-small">XS</option>
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                        <option value="extra-large">XL</option>
+                    </select>
+                </section>
+                <section>
+                    <button>Legg i handlekurv</button>
+                    <button aria-label="Legg til i ønskeliste">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </section>
+                <section>
+                    <details>
+                        <summary>
+                            Materiale og vedlikehold 
+                            <i class="fa-solid fa-plus"></i>
+                        </summary>
+                        <ul>
+                            <li>Overmateriale: 95% viskose, 5% elastan</li>
+                            <li>Materiale ermer: 100% polyester</li>
+                            <li>Materiale: Jersey</li>
+                        </ul>
+                    </details>
+                </section>
+                <section>
+                    <details>
+                        <summary>
+                            Produktdetaljer
+                            <i class="fa-solid fa-plus"></i>
+                        </summary>
+                        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavillions, award-winning fireworks and seasonal special events.</p>
+                    </details>
+                </section>
+                <section>
+                    <details>
+                        <summary>
+                            Størrelsetabell
+                            <i class="fa-solid fa-plus"></i>
+                        </summary>
+                        <p>Sjekk hvordan din vanlige størrelse konverterer til andre størrelser i vår størrelsesguide. Husk at dette kun er en generell guide og at størrelsene kan variere i forhold til merke og modell.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Eu</th>
+                                    <th>Int</th>
+                                    <th>Brystvidde</th>
+                                    <th>Livvidde</th>
+                                    <th>Hoftemål</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>32</td>
+                                    <td>XXS</td>
+                                    <td>76</td>
+                                    <td>63</td>
+                                    <td>85</td>
+                                </tr>
+                                <tr>
+                                    <td>34</td>
+                                    <td>XS</td>
+                                    <td>80</td>
+                                    <td>66</td>
+                                    <td>89</td>
+                                </tr>
+                                <tr>
+                                    <td>36</td>
+                                    <td>S</td>
+                                    <td>84</td>
+                                    <td>69</td>
+                                    <td>93</td>
+                                </tr>
+                                <tr>
+                                    <td>38</td>
+                                    <td>M</td>
+                                    <td>88</td>
+                                    <td>72</td>
+                                    <td>97</td>
+                                </tr>
+                                <tr>
+                                    <td>40</td>
+                                    <td>L</td>
+                                    <td>92</td>
+                                    <td>76</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>42</td>
+                                    <td>XL</td>
+                                    <td>96</td>
+                                    <td>80</td>
+                                    <td>103</td>
+                                </tr>
+                                <tr>
+                                    <td>44</td>
+                                    <td>XXL</td>
+                                    <td>100</td>
+                                    <td>85</td>
+                                    <td>106</td>
+                                </tr>
+                                <tr>
+                                    <td>46</td>
+                                    <td>3XL</td>
+                                    <td>104</td>
+                                    <td>90</td>
+                                    <td>109</td>
+                                </tr>
+                                <tr>
+                                    <td>48</td>
+                                    <td>4XL</td>
+                                    <td>110</td>
+                                    <td>96.5</td>
+                                    <td>114</td>
+                                </tr>
+                                <tr>
+                                    <td>50</td>
+                                    <td>5XL</td>
+                                    <td>116</td>
+                                    <td>103</td>
+                                    <td>119</td>
+                                </tr>
+                                <tr>
+                                    <td>52</td>
+                                    <td>6XL</td>
+                                    <td>122</td>
+                                    <td>109.5</td>
+                                    <td>124</td>
+                                </tr>
+                                <tr>
+                                    <td>54</td>
+                                    <td>7XL</td>
+                                    <td>128</td>
+                                    <td>116</td>
+                                    <td>130</td>
+                                </tr>
+                                <tr>
+                                    <td>56</td>
+                                    <td>8XL</td>
+                                    <td>134</td>
+                                    <td>122.5</td>
+                                    <td>136</td>
+                                </tr>
+                                <tr>
+                                    <td>58</td>
+                                    <td>9XL</td>
+                                    <td>140</td>
+                                    <td>129</td>
+                                    <td>142</td>
+                                </tr>
+                                <tr>
+                                    <td>60</td>
+                                    <td>10XL</td>
+                                    <td>146</td>
+                                    <td>135.5</td>
+                                    <td>148</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                </section>
+            </section>
+            <section>
+                <h4>Anmeldelser</h4>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <p>32</p>
+                <article>
+                    <h4>Robert Labrador</h4>
+                    <p>2024-10-02</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.</p>
+                </article>
+            </section>
+        </section>
+        <section id="similar-products">
+            <h3>Lignende produkter</h3>
+            <p><a href="#">Se flere lignende produkter <i class="fa-solid fa-arrow-right"></i></a></p>
+            <section class="product-container-slider">
+                <article>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/product-page/similar/belt.jpg">
+                        <!-- Image by <a href="https://pixabay.com/users/gmsjs90-4818715/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5538613">gmsjs90</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5538613">Pixabay</a> -->
+                        <source media="(max-width:800px)" srcset="img/product-page/similar/belt_1280x853.jpg">
+                        <img src="img/product-page/similar/belt_1920x1280.jpg" alt="Produktbilde">
+                    </picture>
+                    <button><i class="fa-regular fa-heart"></i></button>
+                    <section class="header-container">
+                            <h3>Product name</h3>
+                        <p class="price">Kr 1999</p>
+                    </section>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>842 Reviews</span>
+                    </p>
+                </article>
+                <article>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/product-page/similar/belt.jpg">
+                        <!-- Image by <a href="https://pixabay.com/users/gmsjs90-4818715/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5538613">gmsjs90</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5538613">Pixabay</a> -->
+                        <source media="(max-width:800px)" srcset="img/product-page/similar/belt_1280x853.jpg">
+                        <img src="img/product-page/similar/belt_1920x1280.jpg" alt="Produktbilde">
+                    </picture>
+                    <button><i class="fa-regular fa-heart"></i></button>
+                    <section class="header-container">
+                            <h3>Product name</h3>
+                        <p class="price">Kr 1999</p>
+                    </section>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>842 Reviews</span>
+                    </p>
+                </article>
+                <article>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/product-page/similar/belt.jpg">
+                        <!-- Image by <a href="https://pixabay.com/users/gmsjs90-4818715/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5538613">gmsjs90</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5538613">Pixabay</a> -->
+                        <source media="(max-width:800px)" srcset="img/product-page/similar/belt_1280x853.jpg">
+                        <img src="img/product-page/similar/belt_1920x1280.jpg" alt="Produktbilde">
+                    </picture>
+                    <button><i class="fa-regular fa-heart"></i></button>
+                    <section class="header-container">
+                            <h3>Product name</h3>
+                        <p class="price">Kr 1999</p>
+                    </section>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>842 Reviews</span>
+                    </p>
+                </article>
+                <article>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/product-page/similar/belt.jpg">
+                        <!-- Image by <a href="https://pixabay.com/users/gmsjs90-4818715/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5538613">gmsjs90</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5538613">Pixabay</a> -->
+                        <source media="(max-width:800px)" srcset="img/product-page/similar/belt_1280x853.jpg">
+                        <img src="img/product-page/similar/belt_1920x1280.jpg" alt="Produktbilde">
+                    </picture>
+                    <button><i class="fa-regular fa-heart"></i></button>
+                    <section class="header-container">
+                            <h3>Product name</h3>
+                        <p class="price">Kr 1999</p>
+                    </section>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>842 Reviews</span>
+                    </p>
+                </article>
+                <article>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/product-page/similar/belt.jpg">
+                        <!-- Image by <a href="https://pixabay.com/users/gmsjs90-4818715/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5538613">gmsjs90</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5538613">Pixabay</a> -->
+                        <source media="(max-width:800px)" srcset="img/product-page/similar/belt_1280x853.jpg">
+                        <img src="img/product-page/similar/belt_1920x1280.jpg" alt="Produktbilde">
+                    </picture>
+                    <button><i class="fa-regular fa-heart"></i></button>
+                    <section class="header-container">
+                            <h3>Product name</h3>
+                        <p class="price">Kr 1999</p>
+                    </section>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>842 Reviews</span>
+                    </p>
+                </article>
+                <article>
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/product-page/similar/belt.jpg">
+                        <!-- Image by <a href="https://pixabay.com/users/gmsjs90-4818715/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5538613">gmsjs90</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5538613">Pixabay</a> -->
+                        <source media="(max-width:800px)" srcset="img/product-page/similar/belt_1280x853.jpg">
+                        <img src="img/product-page/similar/belt_1920x1280.jpg" alt="Produktbilde">
+                    </picture>
+                    <button><i class="fa-regular fa-heart"></i></button>
+                    <section class="header-container">
+                            <h3>Product name</h3>
+                        <p class="price">Kr 1999</p>
+                    </section>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>842 Reviews</span>
+                    </p>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer id="global-footer">
+        <section id="footer-logo">
+            <h3>Logo</h3>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+        </section>
+
+        <section id="contact">
+            <h4>Kontakt</h4>
+            <p><i class="fa-solid fa-location-dot"></i><strong>Adresse: </strong>B R A Veien 4, 1757 Halden</p>
+            <p><i class="fa-solid fa-phone"></i><strong>Telefon: </strong>69 60 80 00</p>
+            <p><i class="fa-solid fa-envelope"></i><strong>E-post: </strong>halden@hiof.no</p>
+            <p><i class="fa-solid fa-clock"></i><strong>Åpningstider: </strong>Stenger 15:00</p>
+        </section>
+
+        <section id="shortcuts">
+            <h4>Snarveier</h4>
+            <nav aria-label="Snarveier">
+                <ul>
+                    <li><a href="#">Produkter</a></li>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="social-media">
+            <h4>Sosiale medier</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+        </section>
+    </footer>
+</body>
+</html>
