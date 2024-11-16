@@ -48,7 +48,7 @@
                 <li><i class="fa-solid fa-angle-right"></i></li>
                 <li><a href="index.html#popular-categories">Kategorier</a></li>
                 <li><i class="fa-solid fa-angle-right"></i></li>
-                <li><a href="product.html">Produktnavn</a></li>
+                <li><a id="bold" href="product.html">Produktnavn</a></li>
             </ol>
         </section>
         <section id="product-images">
@@ -71,6 +71,8 @@
                     <source media="(max-width:800px)" srcset="img/product-page/main/suit_847x1280.jpg">
                     <img src="img/product-page/main/suit_1271x1920.jpg" alt="Produktbilde, dress for herrer">
                 </picture>
+                </section>
+                <section class="main-image">
                 <picture>
                     <source media="(max-width:400px)" srcset="img/product-page/main/suit.jpg">
                     <!--Image by <a href="https://pixabay.com/users/gksayaan22-4237055/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1971663">gksayaan22</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1971663">Pixabay</a>-->
@@ -84,15 +86,14 @@
             <h3>Produktnavn</h3>
             <section>
                 <a href="#">Merkenavn</a> <!--Fjerne a?-->
-                <p>5195 kr inkl. mva.</p>
-                <p>Farge:</p>
-                <p>beige</p>
+                <p>5 195 kr inkl. mva.</p>
+                <p>Farge: <strong>beige</strong></p>
             </section>
             <section>
-                <section>
-                    <label for="velg-størrelse">Velg størrelse</label>
-                    <select id="velg-størrelse">
-                        <option value="">Velg størrelse</option>
+                <section id="size">
+                    <!-- <label for="velg-størrelse">Velg størrelse</label>   Semantisk riktig å fjerne denne?-->
+                    <select id="size-box">
+                        <option value="velg-størrelse">Velg størrelse</option>
                         <option value="extra-small">XS</option>
                         <option value="small">S</option>
                         <option value="medium">M</option>
@@ -100,9 +101,9 @@
                         <option value="extra-large">XL</option>
                     </select>
                 </section>
-                <section>
-                    <button>Legg i handlekurv</button>
-                    <button aria-label="Legg til i ønskeliste">
+                <section id="product-actions">
+                    <button id="shopping-cart" aria-label="Legg i handlekurv">Legg i handlekurv</button>
+                    <button id="wishlist" aria-label="Legg til i ønskeliste">
                         <i class="fa-regular fa-heart"></i>
                     </button>
                 </section>
@@ -257,23 +258,29 @@
                 </section>
             </section>
             <section>
-                <h4>Anmeldelser</h4>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <p>32</p>
-                <article>
-                    <h4>Robert Labrador</h4>
-                    <p>2024-10-02</p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.</p>
-                </article>
+                <details>
+                    <summary>
+                        Anmeldelser
+                        <span class="star-container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        32
+                        </span>
+                    </summary>
+                    <article id="product-review">
+                        <h4>Robert Labrador</h4>
+                        <p>2024-10-02</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.</p>
+                    </article>
+                </details>
             </section>
         </section>
         <section id="similar-products">

@@ -187,6 +187,8 @@ i.fa-solid {
 
 /*Felles HTML slutter her*/
 
+/*Index.html starter her*/
+
 #banner-container { /*Spørre om dette er responsivt nok*/
     display: flex;
     justify-content: center;
@@ -416,7 +418,7 @@ i.fa-solid {
     }
 }
 
-#popular-categories article::after { /*Hentet fra ChatGPT 12.11.24 */
+#popular-categories article::after{ /*Hentet fra ChatGPT 12.11.24 */
     content: '';
     position: absolute;
     top: 0;
@@ -430,32 +432,32 @@ i.fa-solid {
     pointer-events: none; 
 }
 
-#category1::after {
+#category1::after{
     background-image: url('../img/front-page/categories/coffe.jpg');
     /*Image by <a href="https://pixabay.com/users/freephotocc-2275370/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1280537">Free Photos</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1280537">Pixabay</a>*/
 }
 
-#category2::after {
+#category2::after{
     background-image: url('../img/front-page/categories/woman.jpg');
     /*Image by <a href="https://pixabay.com/users/jupilu-9196359/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7841725">Jupi Lu</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7841725">Pixabay</a>*/
 }
 
-#category3::after {
+#category3::after{
     background-image: url('../img/front-page/categories/swan.jpg');
     /*Image by <a href="https://pixabay.com/users/pen_ash-5526837/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8640045">Penny</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8640045">Pixabay</a>*/
 }
 
-#category4::after {
+#category4::after{
     background-image: url('../img/front-page/categories/winter.jpg');
     /*Image by <a href="https://pixabay.com/users/level_up_filming-18696359/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8578334">Jason</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8578334">Pixabay</a>*/
 }
 
-#category5::after {
+#category5::after{
     background-image: url('../img/front-page/categories/bean.jpg');
     /*Image by <a href="https://pixabay.com/users/zimt2003-5558721/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8451254">Petra Göschel</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8451254">Pixabay</a>*/
 }
 
-#reviews {
+#reviews{
     padding: 1rem;
 
     h2{
@@ -487,13 +489,13 @@ i.fa-solid {
     }
 }
 
-#reviews-container {
+#reviews-container{
     display: flex;
     overflow: auto; 
     gap: 1rem;
 }
 
-.profile-pic {
+.profile-pic{
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -508,6 +510,196 @@ i.fa-solid {
         object-fit: cover;
     }
 }
+
+/*Index.html slutter her*/
+/*products.html starter her*/
+
+.breadcrumb{
+    display: flex;
+    align-items: flex-start;
+
+    ol{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 2rem;
+
+        li{
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+
+            #bold{
+                font-weight: bold;
+            }
+
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}
+
+#product-images{
+    display: flex;
+    gap: 1rem; 
+    align-items: stretch;
+    max-width: 100%;
+
+    .mini-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 0.5rem;
+        gap: 1rem; 
+        flex: 0 0 30%; /*Kilde: https://developer.mozilla.org/en-US/docs/Web/CSS/flex*/
+        height: auto; 
+
+        picture{
+            flex-grow: 1;
+
+            img{
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;  
+            }
+        }
+    }
+
+    .main-image{
+        display: flex;
+        flex: 0 0 70%; 
+        align-items: stretch;
+        margin-right: 1rem;
+
+        picture img{
+            width: 100%;
+            height: 99%; 
+            max-width: 85%
+        }
+    }
+
+}
+
+#product-info{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    h3{
+        font-size: 1.4rem;
+        margin-bottom: 0.7rem;
+    }
+
+    a{
+        color: grey;
+        text-transform: uppercase;
+        font-weight: 1;
+        font-size: 1rem;
+        
+    }
+}
+
+#size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem; 
+}
+
+#size-box{
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc; 
+    border-radius: 0.25rem; 
+    font-size: 1rem;
+    background-color: #f5f5f5; 
+}
+
+#product-actions{
+    display: flex;
+    gap: 1rem; /* Justerer avstanden mellom knappene */
+    align-items: center;
+    margin-bottom: 3rem;
+
+    button{
+        padding: 1rem;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+}
+
+#shopping-cart{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+#wishlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem !important;
+    border: 1px solid #000000 !important;
+    background-color: white;
+
+    i{
+        font-size: 1.5rem;
+    }
+}
+
+section details{
+    border-top: 1px solid #000000; /* Toppkant */
+    padding: 2rem;
+
+    summary{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+section details ul, section details p, section details table, section details article{
+    margin-top: 1rem;
+}
+
+section details ul{
+    padding-left: 1rem;
+
+    li{
+        margin-bottom: 0.5rem;
+    }
+}
+
+#product-review{
+    border: 1px solid #cecece; 
+    border-radius: 0.6rem; 
+    padding: 1rem; 
+    margin-bottom: 1rem;
+    margin-top: 1.3rem; 
+
+    h4{
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
