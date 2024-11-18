@@ -620,7 +620,7 @@ i.fa-solid {
 
 #product-actions{
     display: flex;
-    gap: 1rem; /* Justerer avstanden mellom knappene */
+    gap: 1rem; 
     align-items: center;
     margin-bottom: 3rem;
 
@@ -765,19 +765,89 @@ section details ul{
         color: transparent;
         -webkit-text-stroke: 2px #ffff;
     }
+}
 
     /*Product.html slutter her*/
 
     /*Checkout.html starter her*/
 
-    #checkout-title{
+    #return-index{
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+
+        a{
+            color: blueviolet;
+            text-decoration: none;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        i{
+            color: blueviolet;
+            margin-right: 1rem;
+        }
+    }
+      
+    #checkout-title h2{
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+    
+    #shopping-bag{
+        margin: 1rem;
+        border: 1px solid #ccc;
+
         h2{
-            color: blue;
+            margin-left: 1rem;
+            text-transform: uppercase;
         }
     }
 
-}
+    .product-item {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .product-item-image img{
+        max-width: 100%;
+        height: auto;
+        width: 60%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        margin-left: 1rem;  
+    }
+    
+    .product-checkout-info{
+        margin-left: 3rem;
+    }
 
+    .size, .quantity{
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        width: auto;
+        max-width: 80px;
+    }
+    
+    label[for^="quantity-"]{ /*Hentet fra ChatGPT 18.11.24. For å targette alle quantity verdiene.*/
+        padding-left: 1rem;
+    }
+
+    .icon-container{
+        margin: 3rem;
+        font-size: 1.5rem;
+
+        i{
+            padding: 0.3rem;
+            cursor: pointer;
+        }
+
+        i.fa-regular {
+            -webkit-text-stroke: 2px black;
+        }
+    }
 
 
 /*Media Queries for desktop fra 800px.*/

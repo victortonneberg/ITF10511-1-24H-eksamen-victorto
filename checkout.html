@@ -44,7 +44,7 @@
     <main>
         <section id="return-index">
             <a href="index.html">
-                <i class="fa-solid fa-arrow-left"></i> Fortsett å handle
+                <i class="fa-solid fa-arrow-left"></i> Fortsett og handle
             </a>
         </section>
         
@@ -53,9 +53,8 @@
         </section>
         
         <section id="shopping-bag">
-            <h2>1. Shoppingbagen din</h2>
-    
             <article class="product-item">
+                <h2>1. Shoppingbagen din</h2>
                 <picture class="product-item-image">
                     <source media="(max-width:400px)" srcset="img/product-page/main/suit.jpg">
                     <!--Image by <a href="https://pixabay.com/users/gksayaan22-4237055/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1971663">gksayaan22</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1971663">Pixabay</a>-->
@@ -75,10 +74,12 @@
                         <option value="extra-large">XL</option>
                     </select>
                     <label for="quantity-1">Antall</label>
-                    <input type="number" id="quantity-1" name="quantity" class="quantity">
+                    <input type="number" id="quantity-1" name="quantity" class="quantity" min="1" value="1" required>
                 </section>
+                <section class="icon-container">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-solid fa-trash"></i>
+                </section>
             </article>
     
             <article class="product-item">
@@ -101,10 +102,12 @@
                         <option value="extra-large">XL</option>
                     </select>
                     <label for="quantity-2">Antall</label>
-                    <input type="number" id="quantity-2" name="quantity" class="quantity">
+                    <input type="number" id="quantity-2" name="quantity" class="quantity" min="1" value="1" required>
                 </section>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-trash"></i>
+                <section class="icon-container">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-trash"></i>
+                    </section>
             </article>
     
             <article class="product-item">
@@ -127,10 +130,12 @@
                         <option value="XL">XL</option>
                     </select>
                     <label for="quantity-3">Antall</label>
-                    <input type="number" id="quantity-3" name="quantity" class="quantity">
+                    <input type="number" id="quantity-3" name="quantity" class="quantity" min="1" value="1" required>
                 </section>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-trash"></i>
+                <section class="icon-container">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-trash"></i>
+                    </section>
             </article>
         </section>
     
