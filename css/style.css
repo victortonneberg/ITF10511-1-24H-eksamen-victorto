@@ -1520,6 +1520,10 @@ section details ul{
             margin-right: 7rem;
         }
 
+        button[type="submit"]:hover{
+            cursor: pointer;
+        }
+
         #delivery{
             legend{
                 margin-top: 2rem;
@@ -1536,6 +1540,62 @@ section details ul{
 
             .delivery-option{
                 width: 90%;
+            }
+
+            input{
+                height: auto;
+            }
+        }
+
+        #payment{
+            legend{
+                margin-top: 2rem;
+                font-weight: 600;
+            }
+
+            label[for="cardnumber"]{
+                grid-column: 1 / -1; 
+                grid-row: 2; 
+            }
+            
+            input#cardnumber{
+                grid-column: 1 / -1; 
+                grid-row: 3; 
+                margin-bottom: 0;
+            }
+
+            label[for="expiry-date"]{
+                grid-column: 1 / 2; 
+                grid-row: 4; 
+            }
+            
+            input#expiry-date{
+                grid-column: 1 / 2; 
+                grid-row: 5; 
+            }
+
+            label[for="cvv"]{
+                grid-column: 2 / 3; 
+                grid-row: 4; 
+            }
+            
+            input#cvv{
+                grid-column: 2 / 3; 
+                grid-row: 5; 
+            }
+        }
+
+        .payment-summary{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #terms{
+            margin-left: 7rem;
+            margin-right: 7rem;
+
+            label{
+                margin: 0.5rem;
             }
 
             input{
