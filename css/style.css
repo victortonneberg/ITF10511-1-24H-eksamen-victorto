@@ -195,6 +195,10 @@ i.fa-solid {
     align-items: center;
     padding: 0;
     margin: 0;
+
+    .fa-arrow-left, .fa-arrow-right {
+            display: none;
+        }
 }
 
 #banner {
@@ -1105,34 +1109,43 @@ section details ul{
         /*Felles HTML struktur slutter her*/
 
         /*index.html starter her*/
+        
         #banner-container {
-            overflow-x: auto; 
-            overflow-y: hidden;
+            overflow: hidden; 
             border-radius: 15px; 
-            height: 700px;
-            margin: 3rem 10rem 3rem 10rem;
+            height: auto;
+            margin: 3rem 10rem 3rem 4rem;
             position: relative;
+              
+        .fa-arrow-left, .fa-arrow-right {
+            display: block;
+            position: sticky;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2;
+    }       
 
-            /* .fa-arrow-left, .fa-arrow-right{
-                position: absolute;
-                top: 45%;
-                padding: 13px;
-                background-color: rgba(255, 255, 255, 0.5);
-                border-radius: 50%;
-                cursor: pointer;
-            }
+        .fa-arrow-left{
+            left: 7%;
+            transform: translateX(20px);
+            
+        }   
 
-            .fa-arrow-left{
-                left: 10px;
-                z-index: 1;
-            }
+        .fa-arrow-right{
+            left: 95%;
+        }   
+    }
 
-            .fa-arrow-right{
-                right: 20px;
-                z-index: 1;
-            } */
+        .banner-scroll-area {
+            overflow-x: auto;
+            overflow-y: hidden;
+            border-radius: 95px; 
+            height: auto;
+            padding: 0;
+            margin: 0;
         }
-
     
         #banner {
             display: flex;
@@ -1157,12 +1170,17 @@ section details ul{
             display: block;
             min-width: 300px; 
             flex-shrink: 0;
+            height: 600px;
+        }
+
+        #banner article picture{
+            height: 100%;
         }
     
         #banner article picture img {
             width: 100%;
-            height: 700px;
-            border-radius: 15px; 
+            height: 600px;
+            border-radius: 50px;
         }
 
         #banner2 h2{
