@@ -36,6 +36,9 @@ body{
 }
 
 #search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     right: 8px; 
     top: 0; 
@@ -43,11 +46,7 @@ body{
     margin: auto 0; 
     border: none;
     background: transparent;
-    cursor: pointer;
-    padding: 4px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* cursor: pointer; */
     height: auto; 
 }
 
@@ -292,10 +291,7 @@ i.fa-solid {
         cursor: pointer;
     }
 
-    #new-product:hover, #special-price:hover, #best-sellers:hover{ /*Fjerne dette på mobile?*/
-        background-color: grey;
-        color: white;
-    }
+
 
     #new-product{
         display: inline-flex;
@@ -1023,7 +1019,8 @@ section details ul{
         flex-wrap: wrap;
         margin-top: 1rem;
         padding: 0 1rem; 
-        font-size: 1.1rem; 
+        /* font-size: 1.1rem;  */
+        font-size: calc(0.5rem + 0.5vw);
     }
     
     #global-nav{
@@ -1099,12 +1096,20 @@ section details ul{
         #social-media {
             grid-column: 3 / 4;
             padding-left: 4rem;
+
+            h4{
+                text-align: center;
+            }
+
+            ul{
+                margin-left: 3rem;
+
+                li a{
+                    padding-right: 2.3rem !important;
+                }
+            }
         }
-    
-        #social-media ul li a{
-            padding-right: 2.3rem !important;
-        }
-}
+} 
 
         /*Felles HTML struktur slutter her*/
 
@@ -1129,7 +1134,7 @@ section details ul{
 
         .fa-arrow-left{
             left: 7%;
-            transform: translateX(20px);
+            transform: translateX(20px); /*ChatGPT 22.11.24. For å prøve å få den mer responsiv, da ikonet ikke får optimal plassering ved skalering.*/
             
         }   
 
@@ -1153,11 +1158,11 @@ section details ul{
             gap: 1rem;
 
             h2{
-                top: 15% !important;
+                top: 13% !important;
             }
 
             p{
-                top: 50% !important;
+                top: 55% !important;
             }
 
             button{
@@ -1249,7 +1254,13 @@ section details ul{
                     }
                 }
             }
+            #new-product:hover, #special-price:hover, #best-sellers:hover{
+                background-color: grey;
+                color: white;
+            }
         }
+
+
 
         #popular-categories{
             grid-template-columns: repeat(3, 1fr); 
