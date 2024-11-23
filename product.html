@@ -16,7 +16,7 @@
             <!-- <label for="search">Søk</label> | Sjekke opp om det er semantisk riktig å fjerne denne. Vil aria-label under være godt nok?-->
             <input type="search" placeholder="Søk her" id="search" aria-label="Søk her">
             <!-- <input type="submit" value="Søk"> | Sjekke opp om det er semantisk riktig å fjerne denne-->
-             <button type="submit" id="search-button">
+             <button type="submit" id="search-button" aria-label="Søk">
                 <i class="fa-solid fa-magnifying-glass"></i>
              </button>
         </form>
@@ -34,9 +34,9 @@
 
         <section id="profile">
             <ul>
-                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                <li class="hover-grow"><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#" aria-label="Brukerprofil"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#" aria-label="Ønskeliste"><i class="fa-regular fa-heart"></i></a></li>
+                <li class="hover-grow"><a href="checkout.html" aria-label="Handlekurv"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </section>
     </header>
@@ -449,10 +449,10 @@
         <section id="social-media">
             <h4>Sosiale medier</h4>
                 <ul>
-                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
                 </ul>
         </section>
     </footer>
