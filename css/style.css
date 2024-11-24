@@ -589,9 +589,9 @@ i.fa-solid {
     }
 
     a{
-        color: grey;
+        color: #595959;
         text-transform: uppercase;
-        font-weight: 1;
+        /* font-weight: 1; */
         font-size: 1rem;
         
     }
@@ -602,6 +602,12 @@ i.fa-solid {
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem; 
+}
+
+.hidden{
+    visibility: hidden;
+    height: 0;
+    width: 0;
 }
 
 #size-box{
@@ -734,6 +740,7 @@ section details ul{
 
     .rating {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         margin-top: 0.5rem;
 
@@ -957,7 +964,7 @@ section details ul{
             
             .delivery-time{
                 font-weight: 600;
-                color: #aaa8a8;
+                color: #595959;
             }
             
         }
@@ -1089,16 +1096,8 @@ section details ul{
             grid-column: 3 / 4;
             padding-left: 4rem;
 
-            h4{
-                text-align: center;
-            }
-
-            ul{
-                margin-left: 3rem;
-
-                li a{
-                    padding-right: 2.3rem !important;
-                }
+            ul li a{
+                padding-right: 2.3rem !important;
             }
         }
 } 
