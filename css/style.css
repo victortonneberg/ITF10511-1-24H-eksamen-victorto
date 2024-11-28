@@ -1,3 +1,4 @@
+/*Mobile CSS*/
 /*Felles HTML starter her*/
 
 *{
@@ -1070,7 +1071,7 @@ section details ul{
     }
     
 
-    .hover-grow a:hover i{ /* Inspirasjon fra https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/*/
+    .hover-grow a:hover i{ /* Kilde: https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/*/
         transform: scale(1.5);
         transition: transform 0.5s ease;
     }
@@ -1136,7 +1137,7 @@ section details ul{
         }   
     }
 
-        .banner-scroll-area {
+        .banner-scroll-area { /*Kilde: https://www.w3schools.com/cssref/pr_pos_overflow.php*/
             overflow-x: auto;
             overflow-y: hidden;
             border-radius: 95px; 
