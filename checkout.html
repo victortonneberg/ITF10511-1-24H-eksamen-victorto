@@ -8,14 +8,12 @@
     <link href="ikoner/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Eksamen | Kasse</title> <!--Husk å endre denne-->
+    <title>Kasse</title>
 </head>
 <body>
     <header id="global-header">
         <form id="search-bar">
-            <!-- <label for="search">Søk</label> | Sjekke opp om det er semantisk riktig å fjerne denne. Vil aria-label under være godt nok?-->
             <input type="search" placeholder="Søk her" id="search" aria-label="Søk her">
-            <!-- <input type="submit" value="Søk"> | Sjekke opp om det er semantisk riktig å fjerne denne-->
              <button type="submit" id="search-button" aria-label="Søk">
                 <i class="fa-solid fa-magnifying-glass"></i>
              </button>
@@ -187,7 +185,7 @@
                             Express Hjemlevering
                         </label>
                         <p class="delivery-time">3-4 Virkedager</p>
-                        <p>59kr <i class="fa-solid fa-truck-fast"></i></p>
+                        <p class="delivery-price">59kr <i class="fa-solid fa-truck-fast"></i></p>
                         <p>Bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
                     </section>
             
@@ -197,7 +195,7 @@
                             Express Pakke til utleveringssted
                         </label>
                         <p class="delivery-time">1-3 Virkedager</p>
-                        <p>59kr <i class="fa-brands fa-dhl"></i></p>
+                        <p class="delivery-price">59kr <i class="fa-brands fa-dhl"></i></p>
                     </section>
             
                     <section class="delivery-option">
@@ -206,13 +204,12 @@
                             Standard Hjemlevering
                         </label>
                         <p class="delivery-time">5-8 Virkedager</p>
-                        <p>Gratis <i class="fa-solid fa-box"></i></p>
+                        <p class="delivery-price">Gratis <i class="fa-solid fa-box"></i></p>
                         <p>Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
                     </section>
                 </fieldset>
             </form>
             
-        
             <form id="payment">
                 <fieldset>
                     <legend>4. Betaling</legend>
@@ -243,7 +240,7 @@
                         <input type="checkbox" id="newsletter-checkbox" name="newsletter"> Ja takk! Send nyhetsbrev til meg.
                     </label>
                     <label for="sms-checkbox">
-                        <input type="checkbox" id="sms-checkbox" name="sms"> Jeg ønsker å motta tekstmeldinger med tilbud og nyheter
+                        <input type="checkbox" id="sms-checkbox" name="sms"> Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
                     </label>
                 </section>
             </form>
@@ -251,9 +248,6 @@
         
     </main>
     
-
-    
-
     <footer id="global-footer">
         <section id="footer-logo">
             <h3>Logo</h3>
@@ -275,7 +269,7 @@
                     <li><a href="index.html#popular-products">Produkter</a></li>
                     <li><a href="index.html#popular-categories">Kategorier</a></li>
                     <li><a href="#contact">Kontakt oss</a></li>
-                    <li><a href="#" target="_blank">Tilgjengelighetserklæring</a></li>
+                    <li><a href="ressurser/tilgjengelighetserklering.pdf" target="_blank">Tilgjengelighetserklæring</a></li>
                 </ul>
             </nav>
         </section>

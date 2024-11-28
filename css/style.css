@@ -1,8 +1,8 @@
+/*Felles HTML starter her*/
+
 *{
     box-sizing: border-box;
 }
-
-/*Felles HTML starter her*/
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -106,7 +106,7 @@ body{
 
 i.fa-regular {
     color: transparent;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    -webkit-text-stroke: 1px rgb(0, 0, 0); /*Kilde: https://stackoverflow.com/questions/41317648/how-can-i-show-only-outline-for-a-font-awesome-icon. Brukes flere steder i CSS-filen, refererer bare til den her */
 }
 
 i.fa-solid {
@@ -187,7 +187,7 @@ i.fa-solid {
 
 /*Index.html starter her*/
 
-#banner-container { /*Spørre om dette er responsivt nok*/
+#banner-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,11 +227,12 @@ i.fa-solid {
     }
 }
 
-#banner article:first-child {
+/*Prompt1: 12.11.24 Spurte ChatGPT hvordan jeg kun skulle gjøre første article element synlig på mobile*/
+#banner article:first-child{
     display: block; 
 }
 
-#banner article h2, #banner article p, #banner article button {
+#banner article h2, #banner article p, #banner article button{
     position: absolute;
     padding-right: 1rem;
     right: 5%;
@@ -239,17 +240,17 @@ i.fa-solid {
     text-align: right;
 }
 
-#banner article h2 {
+#banner article h2{
     top: 5%;
     font-size: calc(1.5rem + 1vw);
 }
 
-#banner article p {
+#banner article p{
     top: 52%;
     font-size: calc(0.8rem + 0.5vw);
 }
 
-#banner article button {
+#banner article button{
     top: 80%;
     border-radius: 50px;
     margin-right: 1rem;
@@ -335,7 +336,7 @@ i.fa-solid {
     font-size: 1.3rem;
     border-radius: 25px;
     color: #fff;
-    background-color: rgba(203, 203, 203, 0.767);
+    background-color: rgba(203, 203, 203, 0.767); /*Prompt2: ChatGPT 12.11.24 for å gi button blur.*/
 
     i{
         color: transparent;
@@ -395,7 +396,6 @@ i.fa-solid {
 #popular-categories article {
     display: grid;
     position: relative;
-    /* width: calc(100%-2rem); */
     height: 350px;
     background-size: cover;
     background-position: center;
@@ -413,7 +413,7 @@ i.fa-solid {
     }
 }
 
-#popular-categories article::after{ /*Hentet fra ChatGPT 12.11.24 */
+#popular-categories article::after{ /*Prompt3: Hentet fra ChatGPT 12.11.24 for å gjøre background image blurry.*/
     content: '';
     position: absolute;
     top: 0;
@@ -462,7 +462,7 @@ i.fa-solid {
     }
 
     article{
-        flex: 0 0 auto; /*Denne linjen er hentet fra ChatGPT 12.11.24*/
+        flex: 0 0 auto; /*Prompt4: Denne linjen er hentet fra ChatGPT 12.11.24 for at article skal beholde sin spesifikke størrelse i en flexbox-layout*/
         width: 300px;
         height: auto;
         border: 1px solid #ddd;
@@ -591,7 +591,6 @@ i.fa-solid {
     a{
         color: #595959;
         text-transform: uppercase;
-        /* font-weight: 1; */
         font-size: 1rem;
         
     }
@@ -694,6 +693,10 @@ section details ul{
 
     a{
         text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        text-decoration: underline;
     }
 }
 
@@ -775,16 +778,12 @@ section details ul{
         margin-left: 1rem;
 
         a{
-            color: blueviolet;
+            color: black;
             text-decoration: none;
             font-size: 1rem;
             display: flex;
             align-items: center;
-        }
-
-        i{
-            color: blueviolet;
-            margin-right: 1rem;
+            gap: 1rem;
         }
     }
       
@@ -845,7 +844,7 @@ section details ul{
         max-width: 80px;
     }
     
-    label[for^="quantity-"]{ /*Hentet fra ChatGPT 18.11.24. For å targette alle quantity verdiene.*/
+    label[for^="quantity-"]{ /*Prompt5: Hentet fra ChatGPT 18.11.24. For å targette alle quantity verdiene.*/
         padding-left: 1rem;
     }
 
@@ -925,10 +924,14 @@ section details ul{
         
         a.cancel{
             text-align: center;
-            color: blue;
+            color: black;
+            text-decoration: none;
+        }
+
+        a.cancel:hover{
+            text-decoration: underline;
         }
      
-        
         #delivery{
             legend{
                 font-size: 1.5rem;
@@ -1008,7 +1011,7 @@ section details ul{
 
     /*Felles HTML struktur starter her*/
     body {
-        margin: 0 auto; /* Midtstiller innholdet */
+        margin: 0 auto;
     }
 
     #global-header{
@@ -1018,7 +1021,6 @@ section details ul{
         flex-wrap: wrap;
         margin-top: 1rem;
         padding: 0 1rem; 
-        /* font-size: 1.1rem;  */
         font-size: calc(0.5rem + 0.5vw);
     }
     
@@ -1125,7 +1127,7 @@ section details ul{
 
         .fa-arrow-left{
             left: 7%;
-            transform: translateX(20px); /*ChatGPT 22.11.24. For å prøve å få den mer responsiv, da ikonet ikke får optimal plassering ved skalering.*/
+            transform: translateX(20px); /*Prompt7: ChatGPT 22.11.24. For å prøve å få den mer responsiv, da ikonet ikke får optimal plassering ved skalering.*/
             
         }   
 
@@ -1265,7 +1267,6 @@ section details ul{
             grid-template-columns: repeat(3, 1fr); 
             grid-template-rows: auto auto auto auto auto; 
             gap: 1rem;
-            /* margin: 0 1rem 0 1rem; */
             margin: 3rem 10rem 3rem 10rem;
 
             h2{
@@ -1386,6 +1387,10 @@ section details ul{
         #return-index{
             margin-left: 11rem;
             margin-top: 2rem;
+
+            a:hover{
+                text-decoration: underline;
+            }
         }
 
         #shopping-bag{
@@ -1478,7 +1483,7 @@ section details ul{
                 height: 50px;
             }
             
-            /*Her brukte jeg ChatGPT 20.11.24 for å lære hvordan jeg kunne sette grid spesifikt på label og input. Koden er skrevet selv.*/
+            /*Prompt6: Her brukte jeg ChatGPT 20.11.24 for å lære hvordan jeg kunne sette grid spesifikt på label og input. Koden er skrevet selv.*/
 
             label[for="fornavn"]{
                 grid-column: 1; 
@@ -1576,7 +1581,18 @@ section details ul{
             }
 
             .delivery-option{
+                position: relative;
                 width: 90%;
+
+                label{
+                    padding-right: 5rem;
+                }
+            }
+
+            .delivery-price{
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
             }
 
             input{
